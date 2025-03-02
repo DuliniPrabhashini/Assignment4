@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    background-image: url(/assests/images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#city-img{
+    position: absolute;
+    bottom: 40%;
+    animation: moving 10s ease-in-out infinite;
+}
+
+#road-img{
+    position: absolute;
+    bottom: 0%;
+    animation: moving 10s ease-in-out infinite;
+}
+
+#car-img{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 40%;
+    bottom: 35%;
+}
+
+.wheel{
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    bottom: 35%;
+    animation: rotate-wheel 2s ease-in-out infinite;
+}
+
+.front-wheel{
+    left: 50%;
+}
+
+.back-wheel{
+    left: 41%;
+}
+
+@keyframes rotate-wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moving {
+    100%{
+        transform: translateX(-1400px);
+    }
+}

@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+#box{
+    width: 15vw;
+    height: 15vh;
+    background-color: blue;
+    border-radius: 25px;
+    margin: 1.5rem;
+    transform: rotate(30deg);
+    animation: rotate-and-round 8s ease-in-out infinite;
+}
+
+@keyframes rotate-and-round {
+    0%,100%{  
+        transform: translateX(0px);      
+    }
+    13%{
+        background-color: yellow;
+        transform: translateX(80vw) rotate(180deg);
+    }
+    26%{
+        background-color: red;
+        transform: translateX(80vw) translateY(80vh) rotate(360deg);
+        
+    }
+    39%{
+        background-color: rgb(236, 121, 140);
+        transform: translateX(0px) translateY(80vh) rotate(180deg);
+    }
+    52%{
+        background-color: orange;
+        transform: translateX(0px) rotate(270deg);
+    }
+    65%{
+        background-color: rgb(236, 121, 140);
+        transform: translateX(0px) translateY(80vh);
+    }
+    78%{
+        background-color: red;
+        transform: translateX(80vw) translateY(80vh);
+    }
+    91%{
+        background-color: yellow;
+        transform: translateX(80vw) translateY(0px);
+    }
+}

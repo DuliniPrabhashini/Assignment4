@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+}
+
+body:active .small-circle{
+    opacity: 1;
+    animation: water-drop 4s ease-in-out 0.5s 1;
+}
+
+.circle{
+    border-radius: 100%;
+}
+
+.big-circle{
+    width: 10vh;
+    height: 10vh;
+    border: 2px solid rgba(255, 11, 11, 0.699);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: resizing-circle 6s ease-in-out infinite 0.5s;
+}
+
+.small-circle{
+    width: 1.5vh;
+    height: 1.5vh;
+    border: 4px solid rgb(117, 201, 235);
+    box-shadow: 4px 4px 7px rgb(156, 231, 250);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes resizing-circle {
+    0%{
+        opacity: 1;
+    }
+    33%{
+        opacity: 0.3;
+        width: 80vh;
+        height: 80vh;
+    }
+    66%{
+        opacity: 0.01;
+        width: 90vh;
+        height: 90vh;
+    }
+    99%,100%{
+        opacity: 0;
+    }
+}
+
+@keyframes water-drop {
+    0%{
+        opacity: 1;
+    }
+    33%{
+        opacity: 0.3;
+        width: 3vh;
+        height: 3vh;
+    }
+    66%{
+        opacity: 0.01;
+        width: 4vh;
+        height: 4vh;
+    }
+    99%,100%{
+        opacity: 0;
+    }
+}

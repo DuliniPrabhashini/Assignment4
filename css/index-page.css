@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    background-color: rgb(235, 200, 154);
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: monospace;
+    color: brown;
+}
+
+ul li{
+    list-style: none;
+    padding: 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(160, 71, 38);
+}

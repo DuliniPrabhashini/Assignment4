@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.box{
+    height: 2vh;
+    width: 19vw;
+    background-color: blueviolet;
+    box-shadow: 1px 4px 20px rgb(136, 136, 197);
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: -17vw;
+}
+
+.box:hover{
+    animation: swap-right 4s ease-in-out 1 0.2s;
+}
+
+.menu{
+    font-size: 1rem;
+    color: white;
+}
+#menu1, #menu2, #menu3, #menu4, #menu5{
+    position: relative;
+    left: 10rem;
+}
+
+@keyframes swap-right {
+    50%{
+        transform: translateX(17vw);
+    }
+    100%{
+        
+    }
+}
+
