@@ -32,18 +32,19 @@ body{
     }
     52%{
         background-color: orange;
-        transform: translateX(0px) rotate(270deg);
+        transform: translateX(0px) rotate(360deg);
     }
     65%{
         background-color: rgb(236, 121, 140);
-        transform: translateX(0px) translateY(80vh);
+        transform: translateX(0px) translateY(80vh) rotate(180deg);
     }
     78%{
         background-color: red;
-        transform: translateX(80vw) translateY(80vh);
+        transform: translateX(80vw) translateY(80vh) rotate(360deg);
     }
     91%{
         background-color: yellow;
-        transform: translateX(80vw) translateY(0px);
+        transform: translateX(80vw) translateY(0px) rotate(180deg);
     }
 }
+
